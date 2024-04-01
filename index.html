@@ -4,9 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Title</title>
+    <title>Geometry Genius</title>
 </head>
 <body>
+    <section class="2xl:container lg:mx-auto my-[50px] px-12">
+        <header class="px-[42px] py-[18px] bg-blue-100 flex justify-between items-center rounded-[8px]">
+            <div>
+                <h2 class="text-[45px]">Interactive</h2>
+                <p class="text-[30px] text-gray-500">Geometry Genius</p>
+            </div>
+            <button class="bg-[#1090D8] px-[38px] py-[9px] rounded-[8px] text-white text-[20px]">Blog</button>
+        </header>
+        <main class="mt-[50px] flex flex-col md:flex-row gap-6">
+            <div class="md:w-[70%] grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div class="card border-2 flex flex-col justify-center items-center gap-4 px-[50px] py-[44px] md:p-[20px] hover:bg-yellow-200">
+                    <div>
+                        <img class="h-[194px]" src="./images/triangle.png">
+                    </div>
+                    <h3 class="text-[25px]">Triangle</h3>
+                    <p class="text-[16px]">Area (A) = 0.5 x B x H</p>
+                    <div class="w-full flex items-center gap-2">
+                        <label class="">
+                            <input class="w-full bg-[#F1F1F1] px-[12px] py-[6px] rounded-[4px]" type="text" placeholder="B">
+                        </label>
+                        <p>cm</p>
+                        <label>
+                            <input class="w-full  bg-[#F1F1F1] px-[12px] py-[6px] rounded-[4px]" type="text" placeholder="H">
+                        </label>
+                        <p>cm</p>
+                    </div>
+                    <button class="calculate bg-[#1090D8] text-white w-full py-[16px] rounded-[8px]">Calculate</button>
+                </div>
+
+                <div class="card border-2 flex flex-col justify-center items-center gap-4 px-[50px] py-[44px] md:p-[20px] hover:bg-yellow-200">
+                    <div>
+                        <img class="h-[194px]" src="./images/rectangle.png">
+                    </div>
+                    <h3 class="text-[25px]">Rectangle</h3>
+                    <p class="text-[16px]">Area (A) = W * I</p>
+                    <div class="w-full flex items-center gap-2">
+                        <label class="">
+                            <input class="w-full bg-[#F1F1F1] px-[12px] py-[6px] rounded-[4px]" type="text" placeholder="W">
+                        </label>
+                        <p>cm</p>
+                        <label>
+                            <input class="w-full  bg-[#F1F1F1] px-[12px] py-[6px] rounded-[4px]" type="text" placeholder="I">
+                        </label>
+                        <p>cm</p>
+                    </div>
+                    <button class="calculate bg-[#1090D8] text-white w-full py-[16px] rounded-[8px]">Calculate</button>
+                </div>
+
+                <div class="card border-2 flex flex-col justify-center items-center gap-4 px-[50px] py-[44px] md:p-[20px] hover:bg-yellow-200">
+                    <div>
+                        <img class="h-[194px]" src="./images/parallelogram.png">
+                    </div>
+                    <h3 class="text-[25px]">Parallelogram</h3>
+                    <p class="text-[16px]">Area (A) = B x H</p>
+                    <div class="w-full flex items-center gap-2">
+                        <label class="">
+                            <input class="w-full bg-[#F1F1F1] px-[12px] py-[6px] rounded-[4px]" type="text" placeholder="B">
+                        </label>
+                        <p>cm</p>
+                        <label>
+                            <input class="w-full  bg-[#F1F1F1] px-[12px] py-[6px] rounded-[4px]" type="text" placeholder="H">
+                        </label>
+                        <p>cm</p>
+                    </div>
+                    <button class="calculate bg-[#1090D8] text-white w-full py-[16px] rounded-[8px]">Calculate</button>
+                </div>
+
+                <div class="card border-2 flex flex-col justify-center items-center gap-4 px-[50px] py-[44px] md:p-[20px] hover:bg-yellow-200">
+                    <div>
+                        <img class="h-[194px]" src="./images/rhombus.png">
+                    </div>
+                    <h3 class="text-[25px]">Rhombus</h3>
+                    <p class="text-[16px]">Area (A) = 0.5 x D<sub>1</sub> x D<sub>2</sub></p>
+                    <div class="w-full flex items-center gap-2">
+                        <label class="">
+                            <input class="w-full bg-[#F1F1F1] px-[12px] py-[6px] rounded-[4px]" type="text" placeholder="D1">
+                        </label>
+                        <p>cm</p>
+                        <label>
+                            <input class="w-full  bg-[#F1F1F1] px-[12px] py-[6px] rounded-[4px]" type="text" placeholder="D2">
+                        </label>
+                        <p>cm</p>
+                    </div>
+                    <button class="calculate bg-[#1090D8] text-white w-full py-[16px] rounded-[8px]">Calculate</button>
+                </div>
+
+                <div class="card border-2 flex flex-col justify-center items-center gap-4 px-[50px] py-[44px] md:p-[20px] hover:bg-yellow-200">
+                    <div>
+                        <img class="h-[194px]" src="./images/pentagon.png">
+                    </div>
+                    <h3 class="text-[25px]">Pentagon</h3>
+                    <p class="text-[16px]">Area (A) = 0.5 x P x B</p>
+                    <div class="w-full flex items-center gap-2">
+                        <label class="">
+                            <input class="w-full bg-[#F1F1F1] px-[12px] py-[6px] rounded-[4px]" type="text" placeholder="P">
+                        </label>
+                        <p>cm</p>
+                        <label>
+                            <input class="w-full  bg-[#F1F1F1] px-[12px] py-[6px] rounded-[4px]" type="text" placeholder="B">
+                        </label>
+                        <p>cm</p>
+                    </div>
+                    <button class="calculate bg-[#1090D8] text-white w-full py-[16px] rounded-[8px]">Calculate</button>
+                </div>
+
+                <div class="card border-2 flex flex-col justify-center items-center gap-4 px-[50px] py-[44px] md:p-[20px] hover:bg-yellow-200">
+                    <div>
+                        <img class="h-[194px]" src="./images/triangle.png">
+                    </div>
+                    <h3 class="text-[25px]">Ellipse</h3>
+                    <p class="text-[16px]">Area (A) = &#960AB</p>
+                    <div class="w-full flex items-center gap-2">
+                        <label class="">
+                            <input class="w-full bg-[#F1F1F1] px-[12px] py-[6px] rounded-[4px]" type="text" placeholder="A">
+                        </label>
+                        <p>cm</p>
+                        <label>
+                            <input class="w-full  bg-[#F1F1F1] px-[12px] py-[6px] rounded-[4px]" type="text" placeholder="B">
+                        </label>
+                        <p>cm</p>
+                    </div>
+                    <button class="calculate bg-[#1090D8] text-white w-full py-[16px] rounded-[8px]">Calculate</button>
+                </div>
+            </div>
+            <div class="md:w-[30%] border-2 p-[44px]">
+                <h1 class="text-center underline">Area Calculation</h1>
+            </div>
+        </main>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
