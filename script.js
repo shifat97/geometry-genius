@@ -12,7 +12,7 @@ function convertToMeter(button) {
     const getCentimeter = button.previousSibling.previousSibling;
     const getValue = getCentimeter.innerText.split('c')[0];
     const centimeterToMeter = parseFloat(getValue) * 0.01;
-    getCentimeter.innerHTML = `${centimeterToMeter.toFixed(2)}m<sub>2</sub>`
+    getCentimeter.innerHTML = `${centimeterToMeter.toFixed(2)}m<sup>2</sup>`
 }
 
 // This function adds the area and title to right sidebar
